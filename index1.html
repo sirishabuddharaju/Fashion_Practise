@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h3>Fill The Form If You Want To Join In The Fashion Technology Related Courses</h3><br />
+    <form action="data.java" method="get" target="_blank" autocomplete="off" >
+       <strong> <label for="nam" >Enter Full Name</label></strong>
+        <input type="text" placeholder="ex: Buddharaju Sirisha" name="nam" id="nam" required /> <br /><br />
+        <strong><label for="ema" >Enter Email</label></strong>
+        <input type="email" placeholder="ex: siri@gmail.com" name="ema" id="ema"  requried /> <br /><br />
+        <strong><label for="pho" >Enter Phone Number </label></strong>
+        <input type="tell" placeholder="ex: 1234567890" name="pho" id="pho" required minlength="10" maxlength="10"/> <br /><br />
+       <strong> <label for="joi"> The Date Of Joining </label></strong>
+        <input type="date" id="joi" name="joi" value="2025-07-02" readonly/><br /> <br />
+        <strong><label for="age"> Enter your Age </label></strong>
+        <input type="number" id="age" name="age" min="18" max="30"required /><br /><br />
+        <strong><label for="bir" >Enter Date Of Birth</label></strong>
+        <input type="date"  id="bir" name="bir" required disabled><br /><br />
+       <strong> <label for="m" >Select Gender :</label> </strong>
+        <input type="radio"  id="m" name="g" value="male" required /> 
+        <label for="m">Male</label>
+         <input type="radio"  id="f" name="g" value="female" required /> 
+          <label for="f">Female</label><br /><br />
+        <strong><label for="cit" >Enter The City You Live</label></strong>
+        <input type="text" placeholder="ex: miyapur" id="cit" name="cit" required /> <br /><br />
+        <strong><label for="cou" >Select Course You Intrested In</label>  <br /><br /></strong>
+
+        <!-- Use the "multiple" attribute to allow the user to select more than one value.
+             Use the size attribute to specify the number of visible values: -->
+        <select name="cou" id="cou" multiple size="4" required> 
+          <option value="ab">Select course</option>
+          <optgroup label="After 12th Regular Programmes">          
+          <option value="ad">B.Sc. (Fashion Management and Communication Design)</option>
+          <!--To define a pre-selected option, add the selected attribute to the option -->
+          <option value="ae" selected>B.Sc. (Fashion Design) </option>
+          <option value="af">B.Design (Fashion)</option>
+        </optgroup> 
+           <optgroup label="After 12th International Credit Transfer Option">
+          <option value="ag">B.Design (Fashion) [2+2 with International Credit Transfer Option</option>
+         </optgroup> 
+                     
+            <optgroup label="After Diploma or Certificate Regular Programmes"> 
+          <option value="ak">B.Sc. (Fashion Design) [Lateral Entry]</option>
+           <option value="al">Design (Fashion) [Lateral Entry]</option>
+          </optgroup>
+         
+          <optgroup label="After Graduation Regular Programmes"> 
+            <option value="am">M.Sc. (Fashion Design)</option>
+             <option value="an">M.Design (Fashion)</option>
+            </optgroup>
+          
+          <optgroup label=" After Post Graduation Regular Programmes"> 
+              <option value="az">Ph.D. (Fashion)</option>
+                       </optgroup> 
+        </select> <br/><br/>
+        <strong><label for="res" >Upload Your Resume</label></strong>
+        <input type="file" accept=".pdf" placeholder="select the resume" id="res" name="res" required/> <br /><br />
+        <strong><label for="que" >Ask If you Have Any Queries</label><br /><br/></strong>
+        <textarea id="que" name="que" cols="100" rows="10" placeholder="Ask If You Have any Queries" required></textarea> <br /><br />
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset" />
+        <input type="button" value="button" />
+    </form>
+    <br /><br />
+    <h3>Fill The Form If You Want To Join In The Fashion Technology Related ShortTerm Courses Offline And Online </h3><br />
+    <form action="data1.java" method="get" autocomplete="off" enctype="multipart/form-data">
+      <!-- autocomplete="on means it gives the suggestion we entered before" whent it is set to "off" it don't give suggestions-->
+       <!-- enctype="multipart/form-data" itntells browser to encode the form data correctly for file transfers -->
+        <strong><label for="na" >Enter Full Name</label></strong>
+        <input type="text" placeholder="ex: Buddharaju Sirisha" name="na" id="na" required /> <br /><br />
+       <strong> <label for="em" >Enter Email</label></strong>
+        <input type="email" placeholder="ex: siri@gmail.com" name="em" id="em" required/> <br /><br />
+        <strong><label for="ph" >Enter Phone Number </label></strong>
+        <input type="tel" placeholder="ex: 1234567890" name="ph" id="ph" required minlength="10" maxlength="10"> <br /><br />
+        <strong><label for="bir" >Select Gender :</label> </strong>
+        <input type="radio"  id="me" name="ge" value="male" required> 
+        <strong><label for="me">Male</label></strong>
+        <input type="radio"  id="fe" name="ge" value="female" required> 
+        <strong><label for="fe">Female</label><br /><br /></strong>
+        <select name="shortcourse" id="sel" required> 
+          <option value="abc">Select Course</option>      
+          <optgroup label="After 12th Regular Programmes">
+          <option value="adc">B.Sc. (Fashion Management and Communication Design)</option>
+          <!--To define a pre-selected option, add the selected attribute to the option -->
+          <option value="aec">B.Sc. (Fashion Design) </option>
+          <option value="afc">B.Design (Fashion)</option>
+        </optgroup> 
+           <optgroup label="After 12th International Credit Transfer Option">
+          <option value="agc">B.Design (Fashion) [2+2 with International Credit Transfer Option</option>
+         </optgroup> 
+                     
+          <optgroup label="After Diploma or Certificate Regular Programmes"> 
+          <option value="akc">B.Sc. (Fashion Design) [Lateral Entry]</option>
+          <option value="alc">Design (Fashion) [Lateral Entry]</option>
+          </optgroup>
+         
+          <optgroup label="After Graduation Regular Programmes"> 
+            <option value="amc">M.Sc. (Fashion Design)</option>
+             <option value="anc">M.Design (Fashion)</option>
+            </optgroup>
+          
+          <optgroup label=" After Post Graduation Regular Programmes"> 
+              <option value="azc">Ph.D. (Fashion)</option>
+                       </optgroup> 
+        </select> <br/><br/>       
+        <strong><label for="tim">Select The Time You Are Flexible With To Join The Course</label></strong>
+        <input type="time" id="tim" name="tim" required ><br /><br />
+        <strong><label for="mon">Select The Month You Are Flexible With To Join The Course</label></strong>
+        <input type="month" id="mon" name="mon" required><br /><br />
+        <strong><label for="wee">Select The Week You Are Flexible With To Join The Course</label></strong>
+        <input type="week" id="wee" name="wee" required><br /><br />
+        <strong><label for="qu" >Ask If you Have Any Queries</label><br/><br/></strong>
+        <textarea id="qu" cols="100" rows="10"placeholder="Ask If you Have Any Queries" required></textarea> <br /><br />
+        <strong><label for="cl">Select The Color</label></strong>
+         <input type="color" id="cl" required/> <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button"> View</button>
+       
+    </form>
+  
+     
+
+</body>
+</html>
